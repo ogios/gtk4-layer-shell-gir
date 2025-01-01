@@ -30,8 +30,7 @@ gtk4-layer-shell-sys.workspace = true
 
 [dev-dependencies]
 gio.workspace = true
-libadwaita.workspace = true
-relm4.workspace = true
 
 [target.'cfg(docsrs)'.dependencies]
-gdk = { package = "gdk4", version = "0.9", features = ["gl", "v4_16"] }
+gdk = { git = "https://github.com/ogios/gtk4-rs.git", version = "0.9", branch = "0.9", package = "gdk4" }
+# gdk = { package = "gdk4", version = "0.9", features = ["gl", "v4_16"] }
